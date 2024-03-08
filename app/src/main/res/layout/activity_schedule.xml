@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Schedule">
+
+    <!-- Add padding to the entire screen -->
+    <LinearLayout
+        android:id="@+id/redView"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="#FF0000"
+        android:orientation="vertical" >
+
+
+        <!-- "Contact Us" text -->
+        <TextView
+            android:id="@+id/contactUsText"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="start"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/gothic_a1_light"
+            android:text="Schedule"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Radio -->
+            <ImageView
+                android:id="@+id/MusicIcon"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:src="@drawable/baseline_music_note_24"
+                android:onClick="onMusicIconClicked"
+                android:layout_marginEnd="4dp"
+                android:contentDescription="@string/tik_icon_description" />
+
+            <ImageView
+                android:id="@+id/NewsIcon"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:src="@drawable/baseline_newspaper_24"
+                android:onClick="onNewsIconClicked"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:contentDescription="@string/tik_icon_description" />
+
+            <!-- Weather -->
+            <ImageView
+                android:id="@+id/ShowsIcon"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:src="@drawable/baseline_video_chat_24"
+                android:onClick="onShowsIconClicked"
+                android:layout_marginStart="4dp"
+                android:contentDescription="@string/tik_icon_description" />
+
+            <!-- Weather -->
+            <ImageView
+                android:id="@+id/weatherIcon"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:src="@drawable/baseline_cloud_queue_24"
+                android:onClick="onWeatherClicked"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:contentDescription="@string/tik_icon_description" />
+
+            <!-- News -->
+            <ImageView
+                android:id="@+id/PhotoIcon"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:src="@drawable/baseline_volunteer_activism_24"
+                android:onClick="onAboutClicked"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:contentDescription="@string/tik_icon_description" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/redView"
+        android:layout_marginTop="16dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:clipToPadding="false"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name"></string>
+    <string name="google_map_api">AIzaSyDhyArzOVw_T-_hQbg4kdP1D_eO1LcmDDU</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_app_description">In the dynamic realm of online radio, Southside FM stands out as a visionary venture fueled by a passion for music and a dedication to providing an unmatched listening experience.</string>
+    <string name="onboarding_app_get_started">About Us</string>
+    <string name="api_key">bd414606b28344ceaed7b4dee8e87813</string>
+
+    <string name="tik_icon_description">TikTok</string>
+
+
+</resources>

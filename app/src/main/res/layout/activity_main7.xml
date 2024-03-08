@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".MainActivity7">
+
+    <LinearLayout
+        android:id="@+id/redView"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:background="#FF0000"
+        android:orientation="vertical" > <!-- Red color -->
+
+        <!-- "Contact Us" text -->
+        <TextView
+            android:id="@+id/contactUsText"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="start"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/gothic_a1_light"
+            android:text="News"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Radio -->
+            <ImageView
+                android:id="@+id/MusicIcon"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:padding="7dp"
+                android:src="@drawable/baseline_music_note_24"
+                android:onClick="onMusicIconClicked"
+                android:layout_marginEnd="4dp"
+                android:contentDescription="@string/tik_icon_description" />
+
+
+            <ImageView
+                android:id="@+id/ShowsIcon"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:padding="7dp"
+                android:src="@drawable/baseline_short_text_24"
+                android:onClick="onShowsIconClicked"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:contentDescription="@string/tik_icon_description" />
+
+            <ImageView
+                android:id="@+id/LocationIcon"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:src="@drawable/baseline_my_location_24"
+                android:onClick="onLocationIconClicked"
+                android:layout_marginStart="4dp"
+                android:contentDescription="@string/tik_icon_description" />
+
+            <!-- Weather -->
+            <ImageView
+                android:id="@+id/WeatherIcon"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:src="@drawable/baseline_cloud_queue_24"
+                android:onClick="onWeatherIconClicked"
+                android:layout_marginStart="4dp"
+                android:contentDescription="@string/tik_icon_description" />
+
+            <!-- News -->
+            <ImageView
+                android:id="@+id/AboutUsIcon"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:src="@drawable/baseline_volunteer_activism_24"
+                android:onClick="onAboutUsClicked"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:contentDescription="@string/tik_icon_description" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="14dp"
+        app:cardElevation="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/search_view"
+            app:defaultQueryHint="Search News..."
+            app:iconifiedByDefault="false"
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_height="?attr/actionBarSize">
+
+        </androidx.appcompat.widget.SearchView>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_main"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

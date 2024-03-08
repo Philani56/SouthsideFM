@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".About">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity5">
+
+        <LinearLayout
+            android:id="@+id/redView"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="#FF0000"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/backIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onBackIconClicked"
+                android:src="@drawable/baseline_keyboard_backspace_24"
+                android:contentDescription="Back"
+                android:padding="10dp"/>
+
+            <TextView
+                android:id="@+id/contactUsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/gothic_a1_light"
+                android:text="About"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/contactUs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/redView"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/logo_transparent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:id="@+id/about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome to Southside FM South Africa, your premier community radio station! Our station proudly serves as the voice of the South African South Indian community. Our mission is simple yet profound: to be the pride of our community. Through our diverse programming and dedication to inclusivity, we strive to connect, inform, and uplift our listeners.\n\nJoin us on this journey as we celebrate culture, share stories, and foster a sense of belonging within our vibrant community."
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="12sp"/>
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/space0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/contactUs"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/icon1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/space0"
+            android:gravity="center_vertical"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/facebookIcon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="5dp"
+                android:padding="6dp"
+                android:src="@drawable/facebook_icon"
+                android:onClick="onFacebookIconClicked"
+                android:background="@drawable/circular_background"
+                tools:ignore="ContentDescription,UseAppTint"
+                android:tint="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Facebook"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:paddingStart="8dp"
+                tools:ignore="HardcodedText,RtlSymmetry" />
+
+            <ImageView
+                android:id="@+id/twitterIcon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="6dp"
+                android:layout_marginStart="50dp"
+                android:src="@drawable/twitter_icon"
+                android:onClick="onTwitterIconClicked"
+                android:tint="@color/white"
+                android:background="@drawable/circular_background"
+                tools:ignore="ContentDescription,UseAppTint" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="X"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:paddingStart="8dp"
+                tools:ignore="HardcodedText,RtlSymmetry" />
+
+
+            <ImageView
+                android:id="@+id/whatsappIcon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="6dp"
+                android:layout_marginStart="50dp"
+                android:src="@drawable/whatsapp_icon"
+                android:onClick="onWhatsappIconClicked"
+                android:tint="@color/white"
+                android:background="@drawable/circular_background"
+                tools:ignore="ContentDescription,UseAppTint" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WhatsApp"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:paddingStart="8dp"
+                tools:ignore="HardcodedText,RtlSymmetry" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/space"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/icon1"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/icon2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/space"
+            android:gravity="center_vertical"
+            tools:ignore="UseCompoundDrawables">
+
+            <!-- YouTube -->
+
+            <ImageView
+                android:id="@+id/youtubeIcon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="5dp"
+                android:onClick="onYouTubeClicked"
+                android:padding="6dp"
+                android:src="@drawable/youtube"
+                android:tint="@color/white"
+                android:background="@drawable/circular_background"
+                tools:ignore="ContentDescription,UseAppTint" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YouTube"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:paddingStart="8dp"
+                tools:ignore="HardcodedText,RtlSymmetry" />
+
+            <ImageView
+                android:id="@+id/linkedinIcon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="6dp"
+                android:layout_marginStart="55dp"
+                android:src="@drawable/linkedin_icon"
+                android:onClick="onLinkedinIconClicked"
+                android:tint="@color/white"
+                android:background="@drawable/circular_background"
+                tools:ignore="ContentDescription,UseAppTint" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LinkedIn"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:paddingStart="8dp"
+                tools:ignore="HardcodedText,RtlSymmetry" />
+
+            <ImageView
+                android:id="@+id/websiteIcon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="12dp"
+                android:padding="6dp"
+                android:src="@drawable/baseline_important_devices_24"
+                android:onClick="onWebsiteIconClicked"
+                app:tint="@color/white"
+                android:background="@drawable/circular_background"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Website"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:paddingStart="8dp"
+                tools:ignore="HardcodedText,RtlSymmetry" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/space1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/icon2"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/icon3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/space1"
+            android:gravity="center_vertical"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/instagramIcon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="6dp"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/instagram_icon"
+                android:onClick="onInstagramIconClicked"
+                android:tint="@color/white"
+                android:background="@drawable/circular_background"
+                tools:ignore="ContentDescription,UseAppTint" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Instagram"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:paddingStart="8dp"
+                tools:ignore="HardcodedText,RtlSymmetry" />
+
+            <ImageView
+                android:id="@+id/tikIcon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="46dp"
+                android:padding="6dp"
+                android:src="@drawable/tik_icon"
+                android:onClick="onTikIconClicked"
+                android:tint="@color/white"
+                android:background="@drawable/circular_background"
+                tools:ignore="ContentDescription,UseAppTint" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tik Tok"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:paddingStart="8dp"
+                tools:ignore="HardcodedText,RtlSymmetry" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/space4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/icon3"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/phoneTextView"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="5dp"
+                android:layout_gravity="center"
+                android:padding="6dp"
+                android:src="@drawable/baseline_phone_24"
+                android:onClick="onTikIconClicked"
+                app:tint="@color/white"
+                android:background="@drawable/circular_background"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="031 007 0487"
+                android:layout_gravity="center"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:paddingStart="8dp"
+                tools:ignore="HardcodedText,RtlSymmetry" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/space5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/space4"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/emailTextView"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="5dp"
+                android:layout_gravity="center"
+                android:padding="6dp"
+                android:src="@drawable/baseline_mail_24"
+                android:onClick="onTikIconClicked"
+                app:tint="@color/white"
+                android:background="@drawable/circular_background"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="admin@southsidefm.com"
+                android:layout_gravity="center"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:paddingStart="8dp"
+                tools:ignore="HardcodedText,RtlSymmetry" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/space6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/space5"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/locationTextView"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="5dp"
+                android:padding="6dp"
+                android:layout_gravity="center"
+                android:src="@drawable/baseline_location_pin_24"
+                android:onClick="onTikIconClicked"
+                app:tint="@color/white"
+                android:background="@drawable/circular_background"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="337 Florence Nightingale Dr, Westcliff, Chatsworth, 4092"
+                android:textSize="12sp"
+                android:layout_gravity="center"
+                android:textColor="@android:color/black"
+                android:paddingStart="8dp"
+                tools:ignore="HardcodedText,RtlSymmetry" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+
+</ScrollView>

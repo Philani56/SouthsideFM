@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity4">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/redView"
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:background="#FF0000"
+            android:orientation="vertical">
+
+            <!-- Back icon -->
+            <ImageView
+                android:id="@+id/backBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onBackIconClicked"
+                android:src="@drawable/baseline_keyboard_backspace_24"
+                android:contentDescription="Back"
+                android:padding="10dp"/>
+
+            <!-- "Contact Us" text -->
+            <TextView
+                android:id="@+id/contactUsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/gothic_a1_light"
+                android:text="Request"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:layout_below="@id/redView"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="-150dp"
+                android:fontFamily="@font/gothic_a1_light"
+                android:text="Request"
+                android:textColorHint="@color/red"
+                android:textAlignment="center"
+                android:textColor="@color/red"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A track you'd like to hear on your favorite show!"
+                android:textColor="@color/app_theme_light"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:padding="8dp" />
+
+
+            <TextView
+                android:id="@+id/emailLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Onair@southsidefm.com"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"/>
+
+            <EditText
+                android:id="@+id/login_email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawablePadding="8dp"
+                android:hint="Enter the email"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/edit_subject"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:drawablePadding="8dp"
+                android:hint="Name: Song Request"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/email_message"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:drawablePadding="8dp"
+                android:hint="Type your message..."
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/email_send"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/app_theme"
+                android:text="Submit"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:cornerRadius="20dp" />
+
+            <Button
+                android:id="@+id/liveVideoButton"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:onClick="onliveVideoClicked"
+                android:backgroundTint="@color/app_theme"
+                android:text="Access Live"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                app:cornerRadius="20dp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
