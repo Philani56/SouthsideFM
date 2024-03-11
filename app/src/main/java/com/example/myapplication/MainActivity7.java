@@ -97,7 +97,7 @@ public class MainActivity7 extends AppCompatActivity implements SelectListener, 
     // onClick method for List icon
     public void onShowsIconClicked(View view) {
         // Open Schedule Page
-        startActivity(new Intent(MainActivity7.this, MainActivity7.class));
+        startActivity(new Intent(MainActivity7.this, Schedule.class));
 
     }
 

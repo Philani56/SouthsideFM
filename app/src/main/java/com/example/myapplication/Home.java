@@ -119,6 +119,6 @@ public class Home extends AppCompatActivity {
     // onClick method for Weather icon
     public void onWeatherClicked(View view) {
         // Open Weather Page
-        startActivity(new Intent(Home.this, Schedule.class));
+        startActivity(new Intent(Home.this, MainActivity2.class));
     }
 }

@@ -36,9 +36,9 @@
                 android:layout_gravity="start"
                 android:layout_marginStart="10dp"
                 android:fontFamily="@font/gothic_a1_light"
-                android:text="Request"
+                android:text="Request A Song"
                 android:textColor="#FFFFFF"
-                android:textSize="20sp"
+                android:textSize="15sp"
                 android:textStyle="bold" />
 
         </LinearLayout>
@@ -46,8 +46,11 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="30dp"
             android:layout_below="@id/redView"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"
             android:orientation="vertical"
             android:padding="24dp">
 
@@ -57,32 +60,32 @@
                 android:drawablePadding="-150dp"
                 android:fontFamily="@font/gothic_a1_light"
                 android:text="Request"
-                android:textColorHint="@color/red"
                 android:textAlignment="center"
                 android:textColor="@color/red"
+                android:textColorHint="@color/red"
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:padding="8dp"
                 android:text="A track you'd like to hear on your favorite show!"
-                android:textColor="@color/app_theme_light"
-                android:textSize="16sp"
                 android:textAlignment="center"
-                android:padding="8dp" />
+                android:textColor="@color/app_theme_light"
+                android:textSize="16sp" />
 
 
             <TextView
                 android:id="@+id/emailLabel"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Onair@southsidefm.com"
-                android:textSize="16sp"
-                android:textColor="@color/black"
                 android:layout_marginTop="20dp"
                 android:paddingStart="8dp"
-                android:paddingEnd="8dp"/>
+                android:paddingEnd="8dp"
+                android:text="Onair@southsidefm.com"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
 
             <EditText
                 android:id="@+id/login_email"
@@ -129,11 +132,11 @@
                 android:layout_width="150dp"
                 android:layout_height="40dp"
                 android:layout_marginTop="30dp"
-                android:onClick="onliveVideoClicked"
                 android:backgroundTint="@color/app_theme"
+                android:onClick="onliveVideoClicked"
                 android:text="Access Live"
-                android:textSize="15sp"
                 android:textColor="@color/white"
+                android:textSize="15sp"
                 app:cornerRadius="20dp" />
 
         </LinearLayout>

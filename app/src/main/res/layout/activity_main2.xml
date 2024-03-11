@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/card_black"
+    tools:context=".MainActivity2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/redView"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:background="#FF0000"
+        android:orientation="vertical">
+
+        <!-- Back icon -->
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onBackIconClicked"
+            android:src="@drawable/baseline_keyboard_backspace_24"
+            android:contentDescription="Back"
+            android:padding="10dp"/>
+
+        <!-- "Contact Us" text -->
+        <TextView
+            android:id="@+id/contactUsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/gothic_a1_light"
+            android:text="Weather"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/picture"
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:background="@drawable/weath"
+            android:layout_below="@+id/redView"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/picture1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/picture"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/todaysWeatherText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/picture"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/gothic_a1_light"
+                android:text="Today's Weather"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/weatherTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/todaysWeatherText"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:padding="8dp"
+                android:text="Weather Information"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
