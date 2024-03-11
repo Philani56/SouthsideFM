@@ -33,7 +33,7 @@ public class Schedule extends AppCompatActivity {
 
                 "Ubuntu Pulse with Dr. G \nWednesday 19h00 to 20h00",
                 "Doctor's Corner with Dr Prabashni Coopsamy \nThursday 19h00 - 20h00",
-                "Friday Night Take Off \nFriday 19h00 - 22h00",
+                "Friday Night Take Off with Sadha Govender \nFriday 19h00 - 22h00",
 
                 "Weekend Visesham with Lalitha Sambasiva Kurukkal \nSaturdays 6h00 - 9h00",
                 "Youth Unplugged with Vaathi Revathi Pillay \nSaturdays 9h00 - 12h00",
@@ -63,7 +63,7 @@ public class Schedule extends AppCompatActivity {
     // onClick method for Weather icon
     public void onWeatherClicked(View view) {
         // Open Weather Page
-        // startActivity(new Intent(MainActivity11.this, Weather.class));
+        startActivity(new Intent(Schedule.this, MainActivity2.class));
     }
 
     // onClick method for News icon

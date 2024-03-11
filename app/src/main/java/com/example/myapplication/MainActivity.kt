@@ -221,7 +221,7 @@ class MainActivity : ComponentActivity() {
                     }
 
                 }) {
-                    Text(text = "Get your location")
+                    Text(text = "Get Updates")
                 }
             }
         }

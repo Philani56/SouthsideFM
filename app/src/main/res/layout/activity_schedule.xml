@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
+    android:background="@color/white"
     tools:context=".Schedule">
 
     <!-- Add padding to the entire screen -->
@@ -27,7 +27,7 @@
             android:fontFamily="@font/gothic_a1_light"
             android:text="Schedule"
             android:textColor="#FFFFFF"
-            android:textSize="12sp"
+            android:textSize="15sp"
             android:textStyle="bold" />
 
         <LinearLayout
