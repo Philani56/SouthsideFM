@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@drawable/weath"
     tools:context=".MainActivity2">
 
     <RelativeLayout
@@ -44,35 +44,24 @@
     </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/picture"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:background="@drawable/weath"
-            android:layout_below="@+id/redView"
-            android:orientation="vertical">
-
-        </LinearLayout>
-
-
-        <LinearLayout
             android:id="@+id/picture1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@+id/picture"
+            android:layout_below="@+id/redView"
             android:orientation="vertical">
-
 
             <TextView
                 android:id="@+id/todaysWeatherText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/picture"
+                android:layout_below="@id/redView"
                 android:layout_alignParentStart="true"
                 android:layout_gravity="center"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:fontFamily="@font/gothic_a1_light"
                 android:text="Today's Weather"
+                android:textStyle="bold"
                 android:textColor="@color/black"
                 android:textSize="16sp" />
 
@@ -89,6 +78,6 @@
                 android:textSize="20sp" />
 
         </LinearLayout>
-
     </RelativeLayout>
 </ScrollView>
+

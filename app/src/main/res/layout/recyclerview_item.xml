@@ -28,7 +28,7 @@
             android:layout_height="wrap_content"
             android:textSize="15sp"
             android:fontFamily="@font/gothic_a1_medium"
-            android:textColor="@color/black"
+            android:textColor="@color/red"
             android:textStyle="bold"/>
 
         <TextView
@@ -37,7 +37,7 @@
             android:layout_height="wrap_content"
             android:textSize="12sp"
             android:fontFamily="@font/gothic_a1_medium"
-            android:textColor="@color/black"
+            android:textColor="@color/red"
             android:layout_marginTop="8dp"/>
 
     </LinearLayout>
