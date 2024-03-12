@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/card_black"
+    android:background="@color/white"
     tools:context=".MainActivity2">
 
     <RelativeLayout
@@ -46,7 +46,7 @@
         <LinearLayout
             android:id="@+id/picture"
             android:layout_width="match_parent"
-            android:layout_height="95dp"
+            android:layout_height="200dp"
             android:background="@drawable/weath"
             android:layout_below="@+id/redView"
             android:orientation="vertical">
@@ -73,7 +73,7 @@
                 android:layout_marginTop="16dp"
                 android:fontFamily="@font/gothic_a1_light"
                 android:text="Today's Weather"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="16sp" />
 
             <TextView
@@ -85,7 +85,7 @@
                 android:layout_gravity="center"
                 android:padding="8dp"
                 android:text="Weather Information"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="20sp" />
 
         </LinearLayout>
