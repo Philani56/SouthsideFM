@@ -221,7 +221,7 @@ class MainActivity : ComponentActivity() {
                     }
 
                 }) {
-                    Text(text = "Get Updates")
+                    Text(text = "Get Traffic")
                 }
             }
         }
