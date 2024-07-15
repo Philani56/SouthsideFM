@@ -12,19 +12,9 @@ Installation 📲
 
 To install the Southside FM Radio App, follow these steps:
 
-Download the APK: Download the APK file from here.
-Enable Unknown Sources:
-Go to your device's settings.
-Navigate to Security or Applications (depending on your device).
-
-Install the APK: Open the downloaded APK file and follow the on-screen instructions to install the app.
-Usage 🎧
-
-Open the App: Launch the Southside FM Radio App from your app drawer.
+Build the apk on Android Studio
 
 Start Listening: Tap the play button to start streaming the live radio. ▶️
-
-Navigate: Use the navigation menu to access different features such as Favorites and Sleep Timer. 📚
 
 Tech Stack
 Language: Java/Kotlin
