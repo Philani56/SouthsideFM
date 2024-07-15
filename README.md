@@ -36,7 +36,7 @@ Setup
 
 Clone the Repository:
 
-git clone https://github.com/yourusername/southside-fm-radio.git
+git clone https://github.com/Philani56/SouthsideFM
 
 Open in Android Studio: Open the project in Android Studio.
 
