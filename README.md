@@ -50,7 +50,8 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 Contact 📧
 If you have any questions or feedback, feel free to reach out:
 
-Email: khumalophilani580@gmail.com
+- Email: khumalophilani580@gmail.com
+- 
 LinkedIn: https://www.linkedin.com/in/nhlakanipho-philani-khumalo-679726224/
 
 Developed with ❤️ while doing an internship at Netstream Integrated Solutions
